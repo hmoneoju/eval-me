@@ -1,5 +1,8 @@
 package com.hmoneoju.evalme.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Operation {
 
     private String expression;
