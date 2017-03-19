@@ -2,7 +2,7 @@ package com.hmoneoju.evalme.exception;
 
 public class EvaluationException extends EvalmeException {
 
-    private static final int ERROR_CODE = 1001;
+    public static final int ERROR_CODE = 1001;
 
     public EvaluationException(String message) {
         super(message);

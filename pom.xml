@@ -5,7 +5,7 @@
 
 	<groupId>com.hmoneoju</groupId>
 	<artifactId>eval-me</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>eval-me</name>
@@ -23,10 +23,12 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<jeval.version>0.9.4</jeval.version>
-		<rest.assure.version>2.9.0</rest.assure.version>
+		<gson.version>2.8.0</gson.version>
+		<rest.assure.version>3.0.2</rest.assure.version>
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -46,9 +48,16 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.jayway.restassured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>${rest.assure.version}</version>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>spring-mock-mvc</artifactId>
+			<version>3.0.2</version>
 			<scope>test</scope>
 		</dependency>
 
