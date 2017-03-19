@@ -14,11 +14,8 @@ public class EvalmeResource {
     @RequestMapping(value="/eval", method = RequestMethod.POST)
     @ResponseBody
     public Operation eval(@RequestParam(value="expression") String expression) {
-        String evalResult = mathEvaluatorService.eval(expression);
-        Operation result = new Operation();
-        result.setExpression(expression);
-        result.setResult(evalResult);
-        return result;
+        String result = mathEvaluatorService.eval(expression);
+        return new Operation(expression,result);
     }
 
 }
