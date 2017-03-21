@@ -24,7 +24,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-public class EvalmeServiceIT {
+public class EvalmeServiceTest {
 
     private static final String EXPRESSION_PARAM_NAME = "expression";
     private static final String VALID_EXPRESSION = "2+2";

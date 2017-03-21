@@ -16,7 +16,7 @@ public class JEvalService implements MathEvaluatorService {
         Evaluator evaluator = new Evaluator();
         try {
             String result = evaluator.evaluate(expression);
-            logger.info(expression +"="+ result);
+            logger.info("{} = {}", expression, result);
             return result;
         } catch (net.sourceforge.jeval.EvaluationException e) {
             throw new EvaluationException("["+expression +"] is not a valid expression", e);
